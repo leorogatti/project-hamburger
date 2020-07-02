@@ -1,0 +1,218 @@
+:root {
+  --principal-orange: #F27D0E;
+  --principal-gray: #333333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--principal-orange);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  padding: 1px 0;
+  background-color: var(--principal-gray);
+}
+
+header .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+header nav {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav a {
+  font-weight: bold;
+  color: var(--principal-orange);
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+}
+
+header nav a {
+  margin-right: 4em;
+}
+
+header nav a:last-child {
+  margin-right: 30em;
+}
+
+/* Main */
+
+div h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 120px;
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  letter-spacing: 1px;
+}
+
+.image {
+  width: 100%;
+  height: 900px;
+  background-image: url('hamburguer.png');
+  background-size: cover;
+}
+
+
+/* Menu */
+
+.menu {
+  padding: 2em 0 7em 0;
+  background-color: #2b2b2b;
+  letter-spacing: 1px;
+}
+
+.menu img {
+  height: 200px;
+  width: 100%;
+}
+
+.menu h1 {
+  color: var(--principal-orange);
+  font-size: 86px;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+hr {
+  border: 2px solid var(--principal-orange);
+  width: 80em;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.menu-hamburguer {
+  color: #e3e3e3;
+  font-size: 64px;
+}
+
+.menu-prices {
+  color: var(--principal-orange);
+  font-size: 64px;
+}
+
+.menu-prices li:first-child, .menu-hamburguer li:first-child {
+  margin: 0;
+}
+.menu-hamburguer li, .menu-prices li{
+  margin-top: 1.5em;
+}
+
+.menu-items {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+}
+
+.menu-hamburguer div ul li {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  width: 30%;
+  position: absolute;
+}
+
+/* Contact */
+
+.contact {
+  padding: 10em 0 10em 0;
+  background-color: #2e2e2e;
+}
+
+.contact h1, .contact p, .contact li {
+  color: var(--principal-orange);
+}
+
+.contact h1 {
+  font-size: 86px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact p {
+  font-size: 72px;
+  text-align: center;
+  margin-top: 0.4em;
+}
+
+.contact ul {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2em auto;
+}
+
+.contact ul li {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact hr {
+  width: 40%;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Locazization */
+
+.localization {
+  padding: 5em 0 4em 0;
+  background-color: #333;
+}
+
+.localization h1 {
+  color: var(--principal-orange);
+  font-size: 86px;
+  text-align: center;
+}
+
+.localization div {
+  text-align: center;
+  margin: 2em 0 5em 0;
+}
+
+.localization p {
+  font-size: 36px;
+  color: var(--principal-orange);
+  text-align: center;
+}
