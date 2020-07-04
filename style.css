@@ -61,7 +61,6 @@ header nav {
 header nav a {
   font-weight: bold;
   color: var(--principal-orange);
-  transition: all 0.2s ease-in-out;
   font-size: 18px;
 }
 
@@ -77,10 +76,6 @@ header nav a:last-child {
 
 .hamburger-image {
   position: relative;
-}
-
-.hamburger-image h1 {
-  
 }
 
 div h1 {
@@ -124,7 +119,7 @@ div h1 {
 
 hr {
   border: 2px solid var(--principal-orange);
-  width: 80em;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -229,4 +224,83 @@ a {
   font-size: 36px;
   color: var(--principal-orange);
   text-align: center;
+}
+
+/* Responsive */ 
+
+@media(max-width: 900px){
+  .image {
+      background-position-x: 125vw;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header nav a {
+    font-size: 14px;
+  }
+
+  div h1 {
+    font-size: 80px;
+  }
+
+  .menu-hamburguer div ul li {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    position: absolute;
+  }
+
+  .menu-hamburguer, .menu-prices {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1700px){
+  .image {
+      background-position-x: 80vw;
+  }
+}
+
+
+@media (max-height: 760px){
+  .image {
+      background-position-y: 200px;
+  }
+}
+
+@media (max-width: 720px) {
+  header nav a {
+    display: none;
+  }
+
+  header img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+  }
+
+  .menu h1 {
+    font-size: 46px;
+  }
+
+  div h1 {
+    font-size: 40px;
+  }
+
+  .contact h1, .contact p {
+    font-size: 46px;
+  }
+
+  .localization h1 {
+    font-size: 46px;
+  }
+
+  .localization p {
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
